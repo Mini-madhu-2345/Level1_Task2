@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time-Based Greeting</title>
+  <script>
+    window.onload = function () {
+      const now = new Date();
+      const hour = now.getHours();
+      let greeting;
+
+      if (hour < 12) {
+        greeting = "Good morning!";
+      } else if (hour < 18) {
+        greeting = "Good afternoon!";
+      } else {
+        greeting = "Good evening!";
+      }
+
+      alert(greeting + " Welcome to our website.");
+    };
+  </script>
+</head>
+<body>
+  <h1>Check your greeting in the alert box!</h1>
+</body>
+</html>
